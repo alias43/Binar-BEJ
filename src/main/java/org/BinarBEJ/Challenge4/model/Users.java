@@ -8,11 +8,13 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Data
 @AllArgsConstructor
 @Builder
 @Entity
+@Table(name = "Pengguna")
 public class Users {
 
     @Id
