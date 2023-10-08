@@ -5,10 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -18,15 +16,16 @@ import javax.persistence.Table;
 public class Users {
 
     @Id
-    @GeneratedValue(generator = "UUID")
-    @GenericGenerator(
-            name = "UUID",
-            strategy = "org.hibernate.id.UUIDGenerator")
-    private String userId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long userId;
 
     private String username;
 
     private String emailAddress;
 
     private String password;
+
+    @OneToMany(mappedBy = "user")
+    private List<Order> orders;
+
 }

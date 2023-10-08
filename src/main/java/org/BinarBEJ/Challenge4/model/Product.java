@@ -3,9 +3,9 @@ package org.BinarBEJ.Challenge4.model;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @AllArgsConstructor
@@ -14,11 +14,15 @@ import javax.persistence.Table;
 @Table(name = "Produk")
 public class Product {
 
-    private String productCode;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long productCode;
 
     private String productName;
 
-    private Integer price;
+    private double price;
 
-    private String merchantCode;
+    @ManyToOne
+    @JoinColumn(name = "merchantCode")
+    private Merchant merchant;
 }

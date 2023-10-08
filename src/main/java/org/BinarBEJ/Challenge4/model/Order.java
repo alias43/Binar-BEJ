@@ -7,6 +7,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -16,19 +17,20 @@ import java.util.Date;
 public class Order {
 
     @Id
-    @GeneratedValue(generator = "UUID")
-    @GenericGenerator(
-            name = "UUID",
-            strategy = "org.hibernate.id.UUIDGenerator")
-    private String orderId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long orderId;
 
     private Date orderTime;
 
     private String destination;
 
-    @ManyToOne
-    private String userId;
-
     private Boolean isCompleted;
+
+    @ManyToOne
+    @JoinColumn(name = "userId")
+    private Users user;
+
+    @OneToMany(mappedBy = "order")
+    private List<OrderDetail> orderDetail;
 
 }
