@@ -3,6 +3,7 @@ package org.BinarBEJ.Challenge4.service.impl;
 import org.BinarBEJ.Challenge4.model.Users;
 import org.BinarBEJ.Challenge4.repository.UserRepository;
 import org.BinarBEJ.Challenge4.service.UserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
