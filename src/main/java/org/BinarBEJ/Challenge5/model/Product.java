@@ -1,11 +1,11 @@
-package org.BinarBEJ.Challenge4.model;
+package org.BinarBEJ.Challenge5.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -15,14 +15,18 @@ import javax.persistence.*;
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long productCode;
 
     private String productName;
 
     private double price;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "merchantCode")
     private Merchant merchant;
+
+    @OneToMany(mappedBy = "product" , fetch = FetchType.LAZY)
+    private List<OrderDetail> orderDetails;
+
 }

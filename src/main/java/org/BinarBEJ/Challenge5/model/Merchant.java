@@ -1,9 +1,8 @@
-package org.BinarBEJ.Challenge4.model;
+package org.BinarBEJ.Challenge5.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.List;
@@ -16,7 +15,7 @@ import java.util.List;
 public class Merchant {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long merchantCode;
 
     private String merchantName;
@@ -25,7 +24,7 @@ public class Merchant {
 
     private Boolean isOpen;
 
-    @OneToMany(mappedBy = "merchant")
+    @OneToMany(mappedBy = "merchant" , fetch = FetchType.LAZY)
     private List<Product> products;
 
 }

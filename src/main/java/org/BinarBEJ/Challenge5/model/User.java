@@ -1,9 +1,8 @@
-package org.BinarBEJ.Challenge4.model;
+package org.BinarBEJ.Challenge5.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.List;
@@ -13,10 +12,10 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name = "Pengguna")
-public class Users {
+public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long userId;
 
     private String username;
@@ -25,7 +24,7 @@ public class Users {
 
     private String password;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user" , fetch = FetchType.LAZY)
     private List<Order> orders;
 
 }

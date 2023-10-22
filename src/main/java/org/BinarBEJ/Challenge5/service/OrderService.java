@@ -1,6 +1,6 @@
-package org.BinarBEJ.Challenge4.service;
+package org.BinarBEJ.Challenge5.service;
 
-import org.BinarBEJ.Challenge4.model.Order;
+import org.BinarBEJ.Challenge5.model.Order;
 
 import java.util.List;
 

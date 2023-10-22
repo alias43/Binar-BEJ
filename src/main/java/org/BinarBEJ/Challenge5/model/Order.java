@@ -1,9 +1,8 @@
-package org.BinarBEJ.Challenge4.model;
+package org.BinarBEJ.Challenge5.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -17,7 +16,7 @@ import java.util.List;
 public class Order {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long orderId;
 
     private Date orderTime;
@@ -26,11 +25,11 @@ public class Order {
 
     private Boolean isCompleted;
 
-    @ManyToOne
+    @ManyToOne (fetch = FetchType.LAZY)
     @JoinColumn(name = "userId")
-    private Users user;
+    private User user;
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "order" , fetch = FetchType.LAZY)
     private List<OrderDetail> orderDetail;
 
 }

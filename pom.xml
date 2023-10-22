@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.BinarBEJ</groupId>
-	<artifactId>Challenge4</artifactId>
+	<artifactId>Challenge_5</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Challenge4</name>
 	<description>Challenge 4 - Binar BEJ</description>

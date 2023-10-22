@@ -1,9 +1,8 @@
-package org.BinarBEJ.Challenge4.model;
+package org.BinarBEJ.Challenge5.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
@@ -15,7 +14,7 @@ import javax.persistence.*;
 public class OrderDetail {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long orderDetailId;
 
     private Integer quantity;
@@ -26,7 +25,7 @@ public class OrderDetail {
     @JoinColumn(name = "orderId")
     private Order order;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "productCode")
     private Product product;
 
