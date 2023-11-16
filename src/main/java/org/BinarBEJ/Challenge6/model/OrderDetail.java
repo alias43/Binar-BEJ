@@ -1,4 +1,4 @@
-package org.BinarBEJ.Challenge5.model;
+package org.BinarBEJ.Challenge6.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,6 +1,6 @@
-package org.BinarBEJ.Challenge5.service;
+package org.BinarBEJ.Challenge6.service;
 
-import org.BinarBEJ.Challenge5.model.Product;
+import org.BinarBEJ.Challenge6.model.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

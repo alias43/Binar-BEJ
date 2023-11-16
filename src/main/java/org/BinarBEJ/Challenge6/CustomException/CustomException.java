@@ -1,4 +1,4 @@
-package org.BinarBEJ.Challenge5.CustomException;
+package org.BinarBEJ.Challenge6.CustomException;
 
 import java.util.InputMismatchException;
 

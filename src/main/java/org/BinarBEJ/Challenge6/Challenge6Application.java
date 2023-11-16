@@ -1,13 +1,13 @@
-package org.BinarBEJ.Challenge5;
+package org.BinarBEJ.Challenge6;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Challenge5Application {
+public class Challenge6Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Challenge5Application.class, args);
+		SpringApplication.run(Challenge6Application.class, args);
 	}
 
 

@@ -1,10 +1,10 @@
-package org.BinarBEJ.Challenge5;
+package org.BinarBEJ.Challenge6;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Challenge5ApplicationTests {
+class Challenge6ApplicationTests {
 
 	@Test
 	void contextLoads() {
