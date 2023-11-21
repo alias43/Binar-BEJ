@@ -1,6 +1,6 @@
-package org.BinarBEJ.Challenge6.repository;
+package org.BinarBEJ.Challenge7.repository;
 
-import org.BinarBEJ.Challenge6.model.User;
+import org.BinarBEJ.Challenge7.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

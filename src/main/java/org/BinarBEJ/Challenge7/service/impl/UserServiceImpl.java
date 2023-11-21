@@ -1,8 +1,8 @@
-package org.BinarBEJ.Challenge6.service.impl;
+package org.BinarBEJ.Challenge7.service.impl;
 
-import org.BinarBEJ.Challenge6.model.User;
-import org.BinarBEJ.Challenge6.repository.UserRepository;
-import org.BinarBEJ.Challenge6.service.UserService;
+import org.BinarBEJ.Challenge7.model.User;
+import org.BinarBEJ.Challenge7.repository.UserRepository;
+import org.BinarBEJ.Challenge7.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

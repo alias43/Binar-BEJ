@@ -1,6 +1,6 @@
-package org.BinarBEJ.Challenge6.service;
+package org.BinarBEJ.Challenge7.service;
 
-import org.BinarBEJ.Challenge6.model.Merchant;
+import org.BinarBEJ.Challenge7.model.Merchant;
 
 import java.util.List;
 

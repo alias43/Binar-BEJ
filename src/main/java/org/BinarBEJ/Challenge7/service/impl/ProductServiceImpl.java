@@ -1,9 +1,9 @@
-package org.BinarBEJ.Challenge6.service.impl;
+package org.BinarBEJ.Challenge7.service.impl;
 
 import lombok.extern.slf4j.Slf4j;
-import org.BinarBEJ.Challenge6.model.Product;
-import org.BinarBEJ.Challenge6.repository.ProductRepository;
-import org.BinarBEJ.Challenge6.service.ProductService;
+import org.BinarBEJ.Challenge7.model.Product;
+import org.BinarBEJ.Challenge7.repository.ProductRepository;
+import org.BinarBEJ.Challenge7.service.ProductService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

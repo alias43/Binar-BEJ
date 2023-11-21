@@ -1,8 +1,8 @@
-package org.BinarBEJ.Challenge6.service.impl;
+package org.BinarBEJ.Challenge7.service.impl;
 
-import org.BinarBEJ.Challenge6.model.Order;
-import org.BinarBEJ.Challenge6.repository.OrderRepository;
-import org.BinarBEJ.Challenge6.service.OrderService;
+import org.BinarBEJ.Challenge7.model.Order;
+import org.BinarBEJ.Challenge7.repository.OrderRepository;
+import org.BinarBEJ.Challenge7.service.OrderService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

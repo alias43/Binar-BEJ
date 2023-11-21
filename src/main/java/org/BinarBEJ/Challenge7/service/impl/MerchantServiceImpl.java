@@ -1,8 +1,8 @@
-package org.BinarBEJ.Challenge6.service.impl;
+package org.BinarBEJ.Challenge7.service.impl;
 
-import org.BinarBEJ.Challenge6.model.Merchant;
-import org.BinarBEJ.Challenge6.repository.MerchantRepository;
-import org.BinarBEJ.Challenge6.service.MerchantService;
+import org.BinarBEJ.Challenge7.model.Merchant;
+import org.BinarBEJ.Challenge7.repository.MerchantRepository;
+import org.BinarBEJ.Challenge7.service.MerchantService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
